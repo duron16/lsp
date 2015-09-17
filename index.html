@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Life is perfect</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsiveslides.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/responsiveslides.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/jquery.bgdsize.js"></script>
+    <!--[if (lt IE 11)]>
+        <style></style><![endif]-->
+    <!--[if (IE 8)]>
+        <style></style><![endif]-->
+</head>
+<body>
+
+    <div class="wrapper">
+<!--header-->
+        <div class="header">
+            <div class="header-top">
+                <div class="container">
+                    <div class="logo">
+                        <a href="/"><img src="img/logo.png" alt="Life is Perfect"></a>
+                    </div>
+                    <ul class="nav">
+                        <li><a href="#">О нас</a></li>
+                        <li class="active"><a href="#">Статьи</a>
+                            <ul>
+                                <li><a href="#">Рецепты здорового питания</a></li>
+                                <li><a href="#">Рецепты здорового питания здорового питания</a></li>
+                                <li><a href="#">Образ жизни</a></li>
+                                <li><a href="#">Питание для похудения</a></li>
+                                <li><a href="#">Спортивное питание</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                    <ul class="auth-block">
+                        <li><a href="#" class="icon-user">Вход</a></li>
+                        <li><a href="#" class="icon-key">Регистрация</a></li>
+                    </ul>
+                    <div class="menu-box icon-menu" onclick="showMenu()">
+                        <div class="menu" id="showMenu">
+                            <ul>
+                                <li><a href="#">Обратная связь</a></li>
+                                <li><a href="#">Подписаться на новости</a></li>
+                                <li><a href="#">Спросить эксперта</a></li>
+                                <li><a href="#">В будущем</a></li>
+                            </ul>
+                        <div class="close" id="hideMenu"><span>&gt;</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-slider">
+                <div class="slider">
+                    <ul class="rslides">
+                        <li><img src="img/slider-1.jpg" alt="slide"></li>
+                        <li><img src="img/slider-2.jpg" alt="slide"></li>
+<!--                        <li><img src="img/slider-3.jpg" alt="slide"></li>-->
+<!--                        <li><img src="img/slider-4.jpg" alt="slide"></li>-->
+                    </ul>
+                </div>
+                <div class="subscription">
+                    <form action="#">
+                        <label for="subscription-name">Подписаться<span>На новости</span></label>
+                        <input id="subscription-name" type="text" placeholder="Ваше имя...">
+                        <input id="subscription-email" type="email" placeholder="Ваш email...">
+                        <button class="icon-paper-plane">Оформить подписку</button>
+                    </form>
+                </div>
+                <ul class="slider-bottom">
+                    <li><a href="#" class="slider-bottom1">Образ<span>Жизни</span></a></li>
+                    <li><a href="#" class="slider-bottom2">Рецепты<span>Питания</span></a></li>
+                    <li><a href="#" class="slider-bottom3">Успех к<span>Похудению</span></a></li>
+                    <li><a href="#" class="slider-bottom4">Спорт<span>Питание</span></a></li>
+                </ul>
+            </div>
+        </div><!--header-end-->
+
+<!--content-->
+        <div class="content">
+            <div class="main-page">
+                <div class="webinars-and-services-box">
+                    <div class="container">
+                        <h3>Вебинары и услуги</h3>
+                        <div class="webinars-wrap">
+                            <div class="webinar-item">
+                                <h4>Название вебинара</h4>
+                                <div class="dscr">Описание вебинара</div>
+                                <div class="webinar-video">
+                                    <img src="img/webinar-bg.jpg" alt="q123">
+                                    <div class="play-button"></div>
+                                </div>
+                            </div>
+                            <div class="webinar-item">
+                                <h4>Название вебинара Название вебинара</h4>
+                                <div class="dscr">Описание вебинара</div>
+                                <div class="webinar-video">
+                                    <img src="img/webinar-bg.jpg" alt="q123">
+                                    <div class="play-button"></div>
+                                </div>
+                            </div>
+                            <div class="webinar-item">
+                                <h4>Название вебинара Название вебинара Название вебинара</h4>
+                                <div class="dscr">Описание вебинара</div>
+                                <div class="webinar-video">
+                                    <img src="img/webinar-bg.jpg" alt="q123">
+                                    <div class="play-button"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--webinars-and-services-box-end-->
+                <div class="vegetables-info-box">
+                    <div class="container">
+                        <div class="vegetables-info">
+                            <div class="vegetables-properties">
+                                <div class="vegetables-properties-inner">
+                                    <div class="capture"><p>На <span>100</span><sup>грамм</sup> Брокколи:</p></div>
+                                    <table>
+                                        <tr>
+                                            <td>Калории</td>
+                                            <td>34</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Белки</td>
+                                            <td>2.82</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Жиры</td>
+                                            <td>0.37</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Углеводы</td>
+                                            <td>6.64</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Пищевые волокна</td>
+                                            <td>2.6</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Натрий</td>
+                                            <td>33</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="vegetables-search">
+                                <form action="#">
+                                    <input type="text">
+                                    <button></button>
+                                </form>
+                                <div class="img-wrap">
+                                    <img src="img/broccoli.jpg" alt="q123" class="background-size-cover">
+                                    <div class="img-dscr">
+                                        <div class="TextContainer">
+                                            <span>broccoli1 broccoli2 dshj</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--vegetables-info-box-end-->
+                <div class="recipes-box">
+                    <div class="recipe-1">
+                        <div class="container">
+                            <div class="recipe-block">
+                                <div class="img-wrap">
+                                    <img src="img/recipes-1-img.jpg" class="background-size-cover" alt="q123">
+                                </div>
+                                <div class="recipe-text">
+                                    <div class="caption">
+                                       <div class="caption-inner">
+                                           <p>1. Салат "Цезарь"</p>
+                                       </div>
+                                       <a href="#" class="icon-login-1">Рецепт</a>
+                                    </div>
+                                    <div class="recipe">
+                                        <p>Рыбным текстом называется текст, служащий для временного наполнения макета в публикациях или производстве веб-сайтов, пока финальный текст еще не создан. Рыбный текст также известен как текст-заполнитель или же текст-наполнитель.</p>
+                                    </div>
+                                </div>
+                                <div class="recipe-video-wrap">
+                                    <div class="video-name">Видео-урок</div>
+                                    <a href="#">
+                                        <span class="video-img-wrap"><img src="img/video-lesson.jpg" class="background-size-cover" alt="q123"></span>
+                                        <span class="play-button"></span>
+                                    </a>
+                                    <div class="video-dscr">Приготовление "Брокколи"</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recipe-2">
+                        <div class="container">
+                            <div class="recipe-block">
+                                <div class="img-wrap">
+                                    <img src="img/recipes-2-img.jpg" class="background-size-cover" alt="q123">
+                                </div>
+                                <div class="recipe-text">
+                                    <div class="caption">
+                                       <div class="caption-inner">
+                                           <p>2. Куриная грудка с овощами Куриная грудка с овощами</p>
+                                       </div>
+                                       <a href="#" class="icon-login-1">Рецепт</a>
+                                    </div>
+                                    <div class="recipe">
+                                        <p>Рыбным текстом называется текст, служащий для временного наполнения макета в публикациях или производстве веб-сайтов, пока финальный текст еще не создан. Рыбный текст также известен как текст-заполнитель или же текст-наполнитель.</p>
+                                        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam obcaecati, provident facilis, nemo ipsa sunt, voluptatum alias quam accusantium voluptas nisi molestias? Repellat dignissimos rem ut eum tempore similique sint!</span><span>Eius ut temporibus repudiandae, excepturi voluptate error quos nobis reiciendis, ducimus provident accusantium esse cum voluptatem tempora totam pariatur quae, eos at fugit quisquam aliquam minus eligendi natus? Excepturi, itaque.</span></p>
+                                    </div>
+                                </div>
+                                <div class="recipe-video-wrap hidden">
+                                    <div class="video-name">Видео-урок 2</div>
+                                    <a href="#">
+                                        <span class="video-img-wrap"><img src="img/1.jpg" class="background-size-cover" alt="q123"></span>
+                                        <span class="play-button"></span>
+                                    </a>
+                                    <div class="video-dscr">Приготовление "Брокколи"</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recipe-3">
+                        <div class="container">
+                            <div class="recipe-block">
+                                <div class="img-wrap">
+                                    <img src="img/recipes-3-img.jpg" alt="q123">
+                                </div>
+                                <div class="recipe-text">
+                                    <div class="caption">
+                                       <div class="caption-inner">
+                                           <p>3. Лосось на пару</p>
+                                       </div>
+                                       <a href="#" class="icon-login-1">Рецепт</a>
+                                    </div>
+                                    <div class="recipe">
+                                        <p>Рыбным текстом называется текст, служащий для временного наполнения макета в публикациях или производстве веб-сайтов, пока финальный текст еще не создан. Рыбный текст также известен как текст-заполнитель или же текст-наполнитель.</p>
+                                    </div>
+                                </div>
+                                <div class="recipe-video-wrap hidden">
+                                    <div class="video-name">Видео-урок 3 Видео-урок</div>
+                                    <a href="#">
+                                        <span class="video-img-wrap"><img src="img/2.jpg" class="background-size-cover" alt="q123"></span>
+                                        <span class="play-button"></span>
+                                    </a>
+                                    <div class="video-dscr">Приготовление "Брокколи" Приготовление "Брокколи" d</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--recipes-box-->
+                <div class="aerostats-box">
+                    <div class="container">
+                        <div class="caption-wrap">
+                            <div class="caption-top"></div>
+                            <div class="caption">
+                                <p>Образ<span>жизни</span></p>
+                            </div>
+                        </div>
+                        <div class="article">
+                            <h3>Название заголовка</h3>
+                            <p>Целенаправленность при одновременной бессмысленности содержания</p>
+                            <p>Рыбные тексты также применяются для демонстрации различных видов шрифта и в разработке макетов. Как правило их содержание бессмысленно.</p>
+                            <p>По причине своей функции текста-заполнителя для макетов нечитабельность рыбных текстов имеет особое значение, так как человеческое восприятие имеет особенность, распознавать определенные образцы и повторения.</p>
+                            <p>В случае произвольного набора букв и длины слов ничто не отвлекает от оценки воздействия и читаемости различных шрифтов, а также от распределения текста на странице (макет или площадь набора). Поэтому большинство рыбных текстов состоят из более или менее произвольного набора слов и слогов. Таким образом образцы повторения не отвлекают от общей картины, а шрифты имеют лучшую базу сравнения. Преимущественно конечно, если рыбный текст кажется в некоторой степени реалистичным, не искажая тем самым воздействие макета финальной <a href="#">публикации</a>.</p>
+                        </div>
+                    </div>
+                </div><!--aerostats-box-end-->
+                <div class="articles-box">
+                    <div class="container">
+                        <h3>Статьи</h3>
+                        <div class="articles-item">
+                            <h2><a href=""><span class="icon-login"></span>Название статьи </a></h2>
+                            <div class="article-text">Рыбным текстом называется текст, служащий для временного наполнения макета в публикациях или производстве веб-сайтов, пока финальный текст еще не создан. Рыбный текст также известен как текст-заполнитель или же текст-наполнитель.</div>
+                            <p></p>
+                        </div>
+                        <div class="articles-item">
+                            <h2><a href=""><span class="icon-login"></span>Название статьи </a></h2>
+                            <div class="article-text">Рыбным текстом называется текст, служащий для временного наполнения макета в публикациях или производстве веб-сайтов, пока финальный текст еще не создан. Рыбный текст также известен как текст-заполнитель или же текст-наполнитель.</div>
+                            <p></p>
+                        </div>
+                        <div class="articles-item">
+                            <h2><a href="#"><span class="icon-login"></span><span class="article-link">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore illum est porro repellat iure, totam qui recusandae tempore repellendus, esse eveniet cupiditate ratione distinctio, quod veritatis accusantium eaque, quae earum?</span></a></h2>
+                            <div class="article-text">Рыбным текстом называется текст, служащий для временного наполнения макета в публикациях или производстве веб-сайтов, пока финальный текст еще не создан. Рыбный текст также известен как текст-заполнитель или же текст-наполнитель.
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque sint nulla temporibus velit doloribus tempore architecto, commodi, facilis expedita, obcaecati quae officiis cum nam ex nemo repudiandae rem nobis reprehenderit.</p>
+                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur error, cupiditate ipsum at, iste est illum magni fugiat illo commodi animi corrupti quaerat! <a href="#">Ullam</a> reiciendis eveniet repellendus, minus, quod aperiam.</span></div>
+                            <p></p>
+                        </div>
+                    </div>
+                </div><!--articles-box-->
+            </div><!--main-page-end-->
+        </div><!--content-end-->
+        <div class="footer">
+            <div class="container">
+                <ul class="footer-nav">
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Статьи</a></li>
+                    <li class="active"><a href="#">Отзывы</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <div class="footer-bottom">
+                    <ul class="social">
+                        <li><a href="#" class="vk"></a></li>
+                        <li><a href="#" class="fb"></a></li>
+                        <li><a href="#" class="inst"></a></li>
+                        <li><a href="#" class="tw"></a></li>
+                    </ul>
+                    <div class="copyright">lifeisperfect&copy; 2015</div>
+                </div>
+            </div>
+        </div>
+    </div><!--wrapper-end-->
+
+    <script>
+  (function($) {
+    $.fn.textfill = function(options) {
+        var fontSize = options.maxFontPixels;
+        var ourText = $('span:visible:first', this);
+        var maxHeight = $(this).height();
+        var maxWidth = $(this).width();
+        var textHeight;
+        var textWidth;
+        do {
+            ourText.css('font-size', fontSize);
+            textHeight = ourText.height();
+            textWidth = ourText.width();
+            fontSize = fontSize - 1;
+        } while ((textHeight > maxHeight || textWidth > maxWidth) && fontSize > 3);
+        return this;
+    }
+})(jQuery);
+
+$(document).ready(function() {
+    $('.TextContainer').textfill({ maxFontPixels: 50 });
+});
+    </script>
+        <script>
+var visible = true;
+function showMenu() {
+    if(visible) {
+        document.getElementById('showMenu').style.display = 'block';
+        visible = false;
+    } else {
+        document.getElementById('showMenu').style.display = 'none';
+        visible = true;
+    }
+}
+    </script>
+
+</body>
+</html>

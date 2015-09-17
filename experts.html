@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Life is perfect</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsiveslides.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/responsiveslides.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/jquery.bgdsize.js"></script>
+    <!--[if (lt IE 11)]>
+        <style></style><![endif]-->
+    <!--[if (IE 8)]>
+        <style></style><![endif]-->
+</head>
+<body>
+
+    <div class="wrapper">
+<!--header-->
+        <div class="header">
+            <div class="header-top">
+                <div class="container">
+                    <div class="logo">
+                        <a href="/"><img src="img/logo.png" alt="Life is Perfect"></a>
+                    </div>
+                    <ul class="nav">
+                        <li><a href="#">О нас</a></li>
+                        <li class="active"><a href="#">Статьи</a>
+                            <ul>
+                                <li><a href="#">Рецепты здорового питания</a></li>
+                                <li><a href="#">Рецепты здорового питания здорового питания</a></li>
+                                <li><a href="#">Образ жизни</a></li>
+                                <li><a href="#">Питание для похудения</a></li>
+                                <li><a href="#">Спортивное питание</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                    <ul class="auth-block">
+                        <li><a href="#" class="icon-user">Вход</a></li>
+                        <li><a href="#" class="icon-key">Регистрация</a></li>
+                    </ul>
+                    <div class="menu-box icon-menu" onclick="showMenu()">
+                        <div class="menu" id="showMenu">
+                            <ul>
+                                <li><a href="#">Обратная связь</a></li>
+                                <li><a href="#">Подписаться на новости</a></li>
+                                <li><a href="#">Спросить эксперта</a></li>
+                                <li><a href="#">В будущем</a></li>
+                            </ul>
+                        <div class="close" id="hideMenu"><span>&gt;</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-slider">
+                <div class="slider">
+                    <ul class="rslides">
+                        <li><img src="img/slider-1.jpg" alt="slide"></li>
+                        <li><img src="img/slider-2.jpg" alt="slide"></li>
+<!--                        <li><img src="img/slider-3.jpg" alt="slide"></li>-->
+<!--                        <li><img src="img/slider-4.jpg" alt="slide"></li>-->
+                    </ul>
+                </div>
+                <div class="subscription">
+                    <form action="#">
+                        <label for="subscription-name">Подписаться<span>На новости</span></label>
+                        <input id="subscription-name" type="text" placeholder="Ваше имя...">
+                        <input id="subscription-email" type="email" placeholder="Ваш email...">
+                        <button class="icon-paper-plane">Оформить подписку</button>
+                    </form>
+                </div>
+                <ul class="slider-bottom">
+                    <li><a href="#" class="slider-bottom1">Образ<span>Жизни</span></a></li>
+                    <li><a href="#" class="slider-bottom2">Рецепты<span>Питания</span></a></li>
+                    <li><a href="#" class="slider-bottom3">Успех к<span>Похудению</span></a></li>
+                    <li><a href="#" class="slider-bottom4">Спорт<span>Питание</span></a></li>
+                </ul>
+            </div>
+        </div><!--header-end-->
+
+<!--content-->
+        <div class="content">
+            <div class="main-page">
+
+
+
+
+
+            </div><!--main-page-end-->
+        </div><!--content-end-->
+        <div class="footer">
+            <div class="container">
+                <ul class="footer-nav">
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Статьи</a></li>
+                    <li class="active"><a href="#">Отзывы</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <div class="footer-bottom">
+                    <ul class="social">
+                        <li><a href="#" class="vk"></a></li>
+                        <li><a href="#" class="fb"></a></li>
+                        <li><a href="#" class="inst"></a></li>
+                        <li><a href="#" class="tw"></a></li>
+                    </ul>
+                    <div class="copyright">lifeisperfect&copy; 2015</div>
+                </div>
+            </div>
+        </div>
+    </div><!--wrapper-end-->
+
+    <script>
+  (function($) {
+    $.fn.textfill = function(options) {
+        var fontSize = options.maxFontPixels;
+        var ourText = $('span:visible:first', this);
+        var maxHeight = $(this).height();
+        var maxWidth = $(this).width();
+        var textHeight;
+        var textWidth;
+        do {
+            ourText.css('font-size', fontSize);
+            textHeight = ourText.height();
+            textWidth = ourText.width();
+            fontSize = fontSize - 1;
+        } while ((textHeight > maxHeight || textWidth > maxWidth) && fontSize > 3);
+        return this;
+    }
+})(jQuery);
+
+$(document).ready(function() {
+    $('.TextContainer').textfill({ maxFontPixels: 50 });
+});
+    </script>
+        <script>
+var visible = true;
+function showMenu() {
+    if(visible) {
+        document.getElementById('showMenu').style.display = 'block';
+        visible = false;
+    } else {
+        document.getElementById('showMenu').style.display = 'none';
+        visible = true;
+    }
+}
+    </script>
+
+</body>
+</html>
