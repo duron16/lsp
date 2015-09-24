@@ -134,6 +134,7 @@ a, button {
 body {
     height: 100%;
     width: 100%;
+/*    background: #eee;*/
     background: #ccc;
     font: 100% Panton, Arial, sans-serif;
     color: #666;
@@ -145,7 +146,7 @@ body {
     box-sizing: border-box;
 }
 .container {
-    max-width: 1275px;
+    max-width: 1280px;
     margin: 0 auto;
     box-sizing: border-box;
 /*    outline: 1px solid red;*/
@@ -154,17 +155,15 @@ body {
 .header {
     min-width: 960px;
     background: #fff;
-}
-.header-top {
     height: 90px;
     background: #fff;
 }
-.header-top .container {
+.header .container {
     position: relative;
     z-index: 200;
     margin-bottom: -1px;
 }
-.header-top .container:after {
+.header .container:after {
     content: '';
     display: block;
     clear: both;
@@ -279,6 +278,7 @@ body {
     padding: 85px 38px;
     top: 0;
     cursor: default;
+    border: 1px solid #fff;
 }
 .header .menu:after {
     content: '';
@@ -311,11 +311,11 @@ body {
 .header .menu ul li a:hover {
     border-bottom: 6px solid #fff;
 }
-/*--header-slider--*/
-.header-slider {
+/*--slider-wrap--*/
+.slider-wrap {
     position: relative;
 }
-.header-slider .container {
+.slider-wrap .container {
     position: absolute;
     top: 0;
 }
@@ -397,7 +397,7 @@ input#subscription-email {
     box-sizing: border-box;
     text-align: center;
     background: rgba(255,255,255,.3);
-    z-index: 100;
+    z-index: 10;
     padding-top: 19px;
 }
 .slider-bottom li {
@@ -963,4 +963,160 @@ ul.footer-nav li a:hover {
     float: left;
     color: #818181;
     font: 150% "Panton";
+}
+/*--experts-page--*/
+.experts-page {
+    background: #EAEAEA;
+    border-bottom: 1px solid #ccc;
+}
+/*--breadcrumb-box--*/
+.breadcrumb-box {
+    padding-top: 110px;
+}
+.breadcrumb {
+    margin: 0 100px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #C6C6C6;
+}
+.breadcrumb li {
+    display: inline-block;
+    font-size: 162.5%;
+    color: #757575;
+}
+.breadcrumb ul li a {
+    display: inline-block;
+    padding: 2px;
+    color: #757575;
+}
+.breadcrumb ul li a:hover {
+    text-decoration: underline !important;
+}
+.breadcrumb li + li:before {
+    content: '>';
+    margin: 0 10px 0 5px;
+}
+/*--online-trener--*/
+.online-trener {
+    padding: 34px 0 60px;
+}
+.online-trener .container:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.trener-article {
+    float: left;
+    width: 50.625%;
+    margin-left: 7.96%;
+}
+.trener-webinar {
+    float: right;
+    width: 28.75%;
+    margin-right: 10.23%;
+}
+.treners-photo {
+    position: relative;
+}
+.treners-photo img {
+    max-width: 100%;
+    box-shadow: 0 0 15px 2px #888;
+}
+.trener-photo-dscr {
+    position: absolute;
+    right: 3%;
+    bottom: 10%;
+    padding: 0 1% 1%;
+    background: #F3C344;
+    color: #fff;
+    font: 300% "PantonBold";
+}
+.trener-photo-dscr span {
+    position: absolute;
+    font: 45.83% "Panton";
+    padding: 5px 20px;
+    padding: 2% 6%;
+    top: -30px;
+    right: 0;
+    background: #909090;
+}
+.online-trener article {
+    color: #757575;
+    font: 113% "Panton";
+}
+.online-trener article h1 {
+    font: 150% "Panton";
+    text-align: left;
+    margin: 21px 0 42px;
+}
+.online-trener article p {
+    padding: 12px 0;
+    text-align: justify;
+}
+/*--subscribe-box--*/
+.experts-page .subscribe-box {
+
+}
+.experts-page .subscribe-box form {
+    width: 84%;
+    margin: auto;
+    background: #fff;
+    box-sizing: border-box;
+/*    padding: 44px 69px;*/
+    padding: 44px 5.39%;
+}
+.experts-page .subscribe-box form input {
+/*    width: 278px;*/
+    width: 29.67%;
+    box-sizing: border-box;
+/*    padding: 21px 25px 21px 73px;*/
+    padding: 21px 3% 21px 7.8%;
+    font: 113% "Panton";
+    color: #868686;
+    height: 68px;
+    margin: 10px 0;
+    border: 1px solid #C4C4C4;
+    transition: width .1s linear, box-shadow .1s linear;
+    -webkit-transition: width .1s linear, box-shadow .1s linear;
+    -moz-transition: width .1s linear, box-shadow .1s linear;
+    -ms-transition: width .1s linear, box-shadow .1s linear;
+    -o-transition: width .1s linear, box-shadow .1s linear;
+}
+.experts-page .subscribe-box form input:focus {
+    width: 35%;
+    border: 1px solid #F3C344;
+    box-shadow: 0 0 5px 3px #F3C344;
+    margin-right: 1px;
+}
+.experts-page .subscribe-box form input.email {
+    background: url(../img/subscribe-email.png) 10% center no-repeat;
+}
+.experts-page .subscribe-box form input.tel {
+    margin-left: -5px;
+    background: url(../img/subscribe-tel.png) 10% center no-repeat;
+}
+.experts-page .subscribe-box form input.name {
+    float: right;
+    background: url(../img/subscribe-name.png) 10% center no-repeat;
+}
+.experts-page .subscribe-box form button {
+    display: block;
+    background: #F3C344;
+    margin: 30px auto 10px;
+/*    padding: 20px 35px;*/
+    padding: 20px 3.73%;
+    border: 0;
+    color: #fff;
+    font: 150% "Panton";
+    transition: border-radius .1s linear, background .1s linear;
+    -webkit-transition: border-radius .1s linear, background .1s linear;
+    -moz-transition: border-radius .1s linear, background .1s linear;
+    -ms-transition: border-radius .1s linear, background .1s linear;
+    -o-transition: border-radius .1s linear, background .1s linear;
+}
+.experts-page .subscribe-box form button:hover {
+    background: #e4b539;
+    border-radius: 10px;
+}
+.experts-page .subscribe-box form button:active {
+    box-shadow: 0 5px 10px 3px #ccc;
 }
