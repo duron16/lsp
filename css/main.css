@@ -39,11 +39,11 @@ a, button {
     font-weight: normal;
 }
 @font-face {
-    font-family: Panton;
+    font-family: "Panton";
     src: url('../fonts/Panton-Regular.otf');
 }
 @font-face {
-    font-family: PantonBold;
+    font-family: "PantonBold";
     src: url('../fonts/Panton-Bold.otf');
 }
 
@@ -1009,11 +1009,6 @@ ul.footer-nav li a:hover {
     width: 50.625%;
     margin-left: 7.96%;
 }
-.trener-webinar {
-    float: right;
-    width: 28.75%;
-    margin-right: 10.23%;
-}
 .treners-photo {
     position: relative;
 }
@@ -1119,4 +1114,65 @@ ul.footer-nav li a:hover {
 }
 .experts-page .subscribe-box form button:active {
     box-shadow: 0 5px 10px 3px #ccc;
+}
+.trener-webinar {
+    float: right;
+    width: 28.75%;
+    margin-right: 10.23%;
+}
+.trener-webinar-item .video-img-wrap {
+    max-height: 232px;
+    overflow: hidden;
+    position: relative;
+}
+.trener-webinar-item h3 {
+    color: #868686;
+    font: 187.5% "Panton";
+    margin: 0 0 20px 0;
+}
+.trener-webinar-item {
+    opacity: .6;
+    transition: opacity .1s linear;
+    -webkit-transition: opacity .1s linear;
+    -moz-transition: opacity .1s linear;
+    -ms-transition: opacity .1s linear;
+    -o-transition: opacity .1s linear;
+    margin-bottom: 35px;
+}
+.trener-webinar-item a.play-button {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    margin: auto;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: url(../img/trener-webinar-btn.png) center center no-repeat;
+    transition: transform .1s linear;
+    -webkit-transition: transform .1s linear;
+    -moz-transition: transform .1s linear;
+    -ms-transition: transform .1s linear;
+    -o-transition: transform .1s linear;
+}
+.trener-webinar-item a.play-button:hover {
+    transform: scale(1.1);
+}
+.trener-webinar-item:hover {
+    opacity: 1;
+}
+/*--news-page--*/
+.news-page {
+}
+.news-box {
+
+}
+.news-box .container {
+    outline: 1px solid red;
+    padding: 0 3.9%;
+}
+.news-item {
+/*    width: 363px;*/
+    width: 28.36%;
+    height: 490px;
+    margin: 63px 0.78% 10px;
+    background: #fff;
 }
