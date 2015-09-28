@@ -11,6 +11,7 @@
     <script src="js/responsiveslides.min.js"></script>
     <script src="js/common.js"></script>
     <script src="js/jquery.bgdsize.js"></script>
+    <script type="text/javascript" src="//vk.com/js/api/openapi.js?117"></script>
     <!--[if (lt IE 11)]>
         <style></style><![endif]-->
     <!--[if (IE 8)]>
@@ -72,9 +73,36 @@
                 </div><!--breadcrumb-box-end-->
                 <div class="news-box">
                     <div class="container">
-                        <div class="news-item vk">
-                            <div class="caption">Вконтакте</div>
+                        <div class="news-wrap">
+                            <div class="news-item vk">
+                                <div class="caption">Вконтакте</div>
+                                <div id="vk_groups"></div>
+                            </div>
+                            <div class="news-item fb">
+                                <div class="caption">facebook</div>
+                                <div class="fb-page" data-href="https://www.facebook.com/MMIX-1619872491616567/timeline/" data-width="80%" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false" data-show-posts="true"></div>
+                            </div>
+                            <div class="news-item twitter">
+                                <div class="caption">twitter</div>
 
+                            </div>
+                        </div>
+                        <div class="feedback">
+                            <div class="container">
+                                <form action="#">
+                                    <h3>Обратная связь</h3>
+                                    <input type="text" placeholder="Имя..." class="name">
+                                    <input type="email" placeholder="Email..." class="email">
+                                    <textarea placeholder="Вопрос..."></textarea>
+                                    <button class="btn-effects">ОТПРАВИТЬ</button>
+                                </form>
+                                <div class="feedback-text">
+                                    <h4>Наши специалисты ответят на Ваш вопрос в ближайшее время!</h4>
+                                    <div class="dscr">
+                                        <p>Текст-«рыба» имеет функцию заполнения места или сравнения воздействия рисунков шрифта. Рыбным текстом называется текст, служащий для временного наполнения макета в публикациях или производстве веб-сайтов, пока финальный текст еще не создан. Рыбный текст также известен как текст-заполнитель или же текст-наполнитель. Иногда текст-«рыба» также используется композиторами при написании музыки. Они напевают его перед тем, как сочинены соответствующие слова. Уже в 16-том веке рыбные тексты имели широкое распространение у печатников.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div><!--news-box-end-->
@@ -136,6 +164,17 @@ function showMenu() {
     }
 }
     </script>
+    <script type="text/javascript">
+VK.Widgets.Group("vk_groups", {mode: 2, width: "auto", height: "405"}, 96849065);
+</script>
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/uk_UA/sdk.js#xfbml=1&version=v2.4";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 </body>
 </html>
