@@ -1012,6 +1012,7 @@ ul.footer-nav li a:hover {
     margin-left: 7.96%;
 }
 .treners-photo {
+    text-align: center;
     position: relative;
 }
 .treners-photo img {
@@ -1159,9 +1160,11 @@ ul.footer-nav li a:hover {
 /*--news-page--*/
 .news-box {
     text-align: center;
+    padding-bottom: 15px;
 }
 .news-wrap {
-    padding-bottom: 25px;
+    outline: 1px solid red;
+/*    padding: 0 4.5%;*/
 }
 .news-wrap:after {
     content: '';
@@ -1169,15 +1172,15 @@ ul.footer-nav li a:hover {
     clear: both;
 }
 .news-item {
-/*    width: 363px;*/
+    width: 363px;
     width: 28.36%;
     height: 490px;
     margin: 63px 0.78% 10px;
-    padding: 57px 20px 26px;
+/*    padding: 57px 30px 26px;*/
+    padding: 57px 2.34% 26px;
     box-sizing: border-box;
     background: #fff;
     position: relative;
-/*    display: inline-block;*/
     float: left;
 }
 #vk_groups {
@@ -1196,28 +1199,36 @@ ul.footer-nav li a:hover {
     z-index: 5;
 }
 .feedback {
-    background: #fff;
-    width: 77.96%;
-    margin: 0 auto 25px;
-    padding: 45px 5.47%;
+    padding: 10px 0;
 }
-.feedback .container:after {
+.feedback .container {
+    outline: 1px solid red;
+}
+.feedback .form-wrap {
+    background: #fff;
+    width: 1126px;
+/*    width: 87.97%;*/
+    width: 79.03%;
+    padding: 45px 4.47%;
+    margin: 0 auto 25px;
+}
+.feedback .form-wrap:after {
     content: '';
     display: block;
     clear: both;
 }
-.feedback form {
+.feedback form.num-2 {
     float: left;
-/*    width: 315px;*/
-    width: 32%;
+/*    width: 312px;*/
+    width: 31.7%;
 }
-.feedback form h3 {
+form.num-2 h4 {
     color: #a3a3a3;
     font: 225% "Panton";
     margin: 0 0 35px;
 }
-.feedback form input,
-.feedback form textarea {
+form.num-2 input,
+form.num-2 textarea {
     width: 100%;
     background: #F8F8F8;
     border: 1px solid #D0D0D0;
@@ -1233,31 +1244,31 @@ ul.footer-nav li a:hover {
     -ms-transition: background .1s linear, box-shadow .1s linear;
     -o-transition: background .1s linear, box-shadow .1s linear;
 }
-.feedback form input:focus,
-.feedback form textarea:focus {
+form.num-2 input:focus,
+form.num-2 textarea:focus {
     background: #fff;
     position: relative;
     z-index: 5;
     border: 1px solid #F3C344;
     box-shadow: 0 0 5px 3px #F3C344;
 }
-.feedback form input.name {
+form.num-2 input.name {
     background: #F8F8F8 url(../img/subscribe-name.png) 9.5% center no-repeat;
 }
-.feedback form input.email {
+form.num-2 input.email {
     background: #F8F8F8 url(../img/subscribe-email.png) 9.5% center no-repeat;
 }
-.feedback form input.name:focus {
+form.num-2 input.name:focus {
     background: #fff url(../img/subscribe-name.png) 9.5% center no-repeat;
 }
-.feedback form input.email:focus {
+form.num-2 input.email:focus {
     background: #fff url(../img/subscribe-email.png) 9.5% center no-repeat;
 }
-.feedback form textarea {
+form.num-2 textarea {
     height: 224px;
     padding-left: 8.6%;
 }
-.feedback form button {
+form.num-2 button {
     width: 100%;
     margin: 40px 0 0;
     padding: 0;
@@ -1268,27 +1279,125 @@ ul.footer-nav li a:hover {
     color: #fff;
     font: 150% "Panton";
 }
-.feedback-text {
+.form-text {
     float: right;
 /*    width: 635px;*/
     width: 64.47%;
     text-align: left;
 }
-.feedback-text h4 {
+.form-text h4 {
     border-bottom: 1px solid #EDEDED;
-    margin: 0 0 25px;
+    margin: 0 0 20px;
     padding-bottom: 17px;
     text-align: left;
-    font: 188% "Panton";
+/*    font: 188% "Panton";*/
+    font: 36px "PantonBold";
     color: #f3c344;
 }
-.feedback-text .dscr {
+.form-text .dscr {
     color: #a3a3a3;
     font: 113% "Panton";
 }
-.news-box .caption {
-    max-width: 16.64%;
+.form-text .dscr p {
+    margin: 5px 0;
+}
+/*--ask-experts-trener-box--*/
+.ask-experts-trener-box .container:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.experts-article {
+/*    width: 718px;*/
+    width: 56.1%;
+    float: left;
+    margin: 30px 2.9%;
+    color: #656565;
+}
+.experts-photo {
     text-align: center;
-    background: #CECECE;
-    padding: 12px
+    position: relative;
+}
+.experts-photo img {
+    max-width: 100%;
+    box-shadow: 0 0 15px 2px #888;
+}
+.experts-article h3 {
+    color: #606060;
+/*    font: 60px "PantonBold";*/
+    font: 335% "PantonBold";
+    text-align: left;
+}
+.experts-article article {
+/*    padding: 0 33px 30px;*/
+    padding: 0 4.6% 30px;
+    font: 113% "Panton";
+}
+.experts-article article p {
+    padding: 5px 0;
+}
+.ask-form {
+    background: #fff;
+/*    padding: 40px 33px;*/
+    padding: 40px 4.6%;
+}
+.ask-form:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.ask-form form.num-2 {
+    float: left;
+/*    width: 312px;*/
+    width: 48%;
+}
+.ask-form .form-text {
+/*    width: 318px;*/
+    width: 48.7%;
+}
+/*--last-faq--*/
+.last-faq {
+    float: right;
+/*    width: 435px;*/
+    width: 33.98%;
+    margin: 30px 2.9% 30px 0;
+}
+.last-faq h3 {
+    font: 250% "PantonBold";
+    text-align: left;
+    margin: -3px 0 40px;
+    line-height: .9;
+}
+.last-faq h3 span {
+    display: block;
+    font-family: "Panton";
+}
+.last-faq .last-faq-item {
+    margin: 11px 0;
+    font: 125% "Panton";
+    color: #706e6e;
+}
+.last-faq .question {
+    padding: 50px 30px;
+    background: #fff;
+    position: relative;
+}
+.last-faq .question:after {
+    position: absolute;
+    right: 0;
+    bottom: -70px;
+    content: '';
+    border: 40px solid transparent;
+    border-top: 40px solid #fff;
+    border-right: 0px solid transparent;
+    z-index: 5;
+
+}
+.last-faq .answer {
+    position: relative;
+    top: -5px;
+    width: 80%;
+    padding: 12px 27px;
+    background: #FFCA29;
+    color: #fff;
 }
