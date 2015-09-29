@@ -1176,3 +1176,9 @@ ul.footer-nav li a:hover {
     margin: 63px 0.78% 10px;
     background: #fff;
 }
+.news-box .caption {
+    max-width: 16.64%;
+    text-align: center;
+    background: #CECECE;
+    padding: 12px
+}
