@@ -1019,20 +1019,20 @@ ul.footer-nav li a:hover {
     max-width: 100%;
     box-shadow: 0 0 15px 2px #888;
 }
-.trener-photo-dscr {
+.main-photo-dscr {
     position: absolute;
     right: 3%;
     bottom: 10%;
-    padding: 0 1% 1%;
+    padding: 0 2% 1%;
     background: #F3C344;
     color: #fff;
     font: 300% "PantonBold";
 }
-.trener-photo-dscr span {
+.main-photo-dscr span {
     position: absolute;
     font: 45.83% "Panton";
     padding: 5px 20px;
-    padding: 2% 6%;
+    padding: 2% 7%;
     top: -30px;
     right: 0;
     background: #909090;
@@ -1115,13 +1115,15 @@ ul.footer-nav li a:hover {
 }
 .trener-webinar {
     float: right;
-    width: 28.75%;
-    margin-right: 10.23%;
+/*    width: 28.75%;*/
+    width: 34.06%;
+/*    margin-right: 10.23%;*/
 }
 .trener-webinar-item .video-img-wrap {
-    max-height: 232px;
+    max-height: 275px;
     overflow: hidden;
     position: relative;
+    box-shadow: 0 0 20px 3px #aaa;
 }
 .trener-webinar-item h3 {
     color: #868686;
@@ -1144,7 +1146,7 @@ ul.footer-nav li a:hover {
     width: 64px;
     height: 64px;
     border-radius: 50%;
-    background: url(../img/trener-webinar-btn.png) center center no-repeat;
+    background: url(../img/webinar-btn.png) center center no-repeat;
     transition: transform .1s linear;
     -webkit-transition: transform .1s linear;
     -moz-transition: transform .1s linear;
@@ -1303,33 +1305,33 @@ form.num-2 button {
     display: block;
     clear: both;
 }
-.experts-article {
+.article-wrap {
 /*    width: 718px;*/
     width: 56.1%;
     float: left;
     margin: 30px 2.9%;
     color: #656565;
 }
-.experts-photo {
+.main-photo {
     text-align: center;
     position: relative;
 }
-.experts-photo img {
+.main-photo img {
     max-width: 100%;
     box-shadow: 0 0 15px 2px #888;
 }
-.experts-article h3 {
+.article-wrap h3 {
     color: #606060;
 /*    font: 60px "PantonBold";*/
     font: 335% "PantonBold";
     text-align: left;
 }
-.experts-article article {
+.article-wrap article {
 /*    padding: 0 33px 30px;*/
     padding: 0 4.6% 30px;
     font: 113% "Panton";
 }
-.experts-article article p {
+.article-wrap article p {
     padding: 5px 0;
 }
 .ask-form {
@@ -1396,4 +1398,27 @@ form.num-2 button {
     padding: 12px 27px;
     background: #FFCA29;
     color: #fff;
+}
+/*--about-us-page--*/
+.about-us-page .main-photo-dscr span {
+    font: 100% "PantonBold";
+    top: -62px;
+}
+.about-us-page .main-photo-dscr span.small-font {
+    position: static;
+    padding: 0;
+    background: inherit;
+    font: 66.7% "Panton";
+}
+.about-us-page .trener-webinar {
+    margin: 30px 1% 30px 0;
+}
+.about-us-page .trener-webinar h2 {
+    color: #706e6e;
+    font: 250% "PantonBold";
+    text-align: left;
+    margin: -10px 0 20px;
+}
+.about-us-page .trener-webinar h2 span {
+    font-family: "Panton";
 }
