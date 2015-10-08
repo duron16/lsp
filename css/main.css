@@ -12,11 +12,11 @@ a {text-decoration: none !important; color: #000;}
 textarea {resize: none;}
 * {outline: none;}
 a, button {
-    transition: background .2s linear, color .2s linear;
-    -webkit-transition: background .2s linear, color .2s linear;
-    -moz-transition: background .2s linear, color .2s linear;
-    -ms-transition: background .2s linear, color .2s linear;
-    -o-transition: background .2s linear, color .2s linear;
+    transition: background .1s linear, color .1s linear;
+    -webkit-transition: background .1s linear, color .1s linear;
+    -moz-transition: background .1s linear, color .1s linear;
+    -ms-transition: background .1s linear, color .1s linear;
+    -o-transition: background .1s linear, color .1s linear;
 }
 .clear {clear: both;}
 .hidden {display: none;}
@@ -74,7 +74,6 @@ a, button {
     font-style: normal;
     font-weight: normal;
 }
-
 @font-face {
   font-family: 'fontello';
   src: url('../fonts/fontello.eot?35722794');
@@ -99,7 +98,6 @@ a, button {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 .icon-login-1:after { content: '\e800'; margin-left: 20px;}
 .icon-user:before { content: '\e801'; margin-right: 8px;}
 .icon-login:before { content: '\e802'; }
@@ -1421,4 +1419,81 @@ form.num-2 button {
 }
 .about-us-page .trener-webinar h2 span {
     font-family: "Panton";
+}
+/*--articles-item-box--*/
+.articles-item-box {
+
+}
+.btn-and-search {
+    margin: 20px 100px 15px;
+}
+.btn-and-search:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.btn-and-search .left {
+    float: left;
+    position: relative;
+    z-index: 5;
+}
+.btn-and-search .female,
+.btn-and-search .male {
+    border: 2px solid #F1C93F;
+    border-radius: 4px;
+    width: 228px;
+    height: 61px;
+    padding-left: 60px;
+    color: #f1c93f;
+    font: 150% "Panton";
+    background: #fff url(../img/male-female-sprite.png) 25px 10px no-repeat;
+    cursor: pointer;
+}
+.btn-and-search .female.active,
+.btn-and-search .female:hover {
+    background: #F1C93F url(../img/male-female-sprite.png) 25px 10px no-repeat;
+    color: #fff;
+}
+.btn-and-search .male {
+    margin-left: 20px;
+    background-position: 25px -40px;
+}
+.btn-and-search .male.active,
+.btn-and-search .male:hover {
+    background: #F1C93F url(../img/male-female-sprite.png) 25px 10px no-repeat;
+    background-position: 25px -40px;
+    color: #fff;
+}
+.btn-and-search form.search {
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 500px;
+    margin-left: -480px;
+}
+.btn-and-search form.search input {
+    display: block;
+    width: 100%;
+    height: 61px;
+    border: 1px solid #F1C93F;
+    border-radius: 4px;
+    font: 150% "Panton";
+    color: #797979;
+/*    padding: 0 44px 0 3%; */ /*Без кнопки закрытия*/
+    padding: 0 75px 0 3%;
+    float: left;
+}
+.btn-and-search form.search button {
+    width: 65px;
+    height: 61px;
+    float: left;
+    margin-left: -65px;
+    background: #FFCA2A url(../img/search-bg.png) center center no-repeat;
+    border: none;
+    border-radius: 0 2px 2px 0;
+}
+/*--articles-item-wrap2--*/
+.articles-item-wrap2 {
+    outline: 1px solid red;
+    background: #fff;
 }
