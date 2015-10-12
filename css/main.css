@@ -11,6 +11,27 @@ html {height: 100%;}
 a {text-decoration: none !important; color: #000;}
 textarea {resize: none;}
 * {outline: none;}
+input.orange, textarea.orange {
+    border: 1px solid #D1D1D1;
+    font: 113% "Panton";
+    height: 66px;
+    line-height: 66px;
+    color: #a3a3a3;
+    margin: 20px auto;
+    display: block;
+    width: 70%;
+    padding: 0 5%;
+    box-sizing: border-box;
+    transition: box-shadow .1s linear;
+    -webkit-transition: box-shadow .1s linear;
+    -moz-transition: box-shadow .1s linear;
+    -ms-transition: box-shadow .1s linear;
+    -o-transition: box-shadow .1s linear;
+}
+input.orange:focus, textarea.orange:focus {
+    border: 1px solid #F3C344;
+    box-shadow: 0 0 5px 3px #F3C344;
+}
 a, button {
     transition: background .1s linear, color .1s linear;
     -webkit-transition: background .1s linear, color .1s linear;
@@ -130,7 +151,7 @@ a, button {
     box-sizing: border-box;
 }
 .btn-effects:hover {
-    background: #e4b539;
+    background: #e4b539 !important;
     border-radius: 10px;
 }
 .btn-effects:active {
@@ -1492,8 +1513,166 @@ form.num-2 button {
     border: none;
     border-radius: 0 2px 2px 0;
 }
+.btn-and-search form.search button:active {
+    box-shadow: inset 0 0 10px 2px #e0ab0a;
+}
 /*--articles-item-wrap2--*/
 .articles-item-wrap2 {
-    outline: 1px solid red;
+    padding-bottom: 70px;
+}
+.articles-item-wrap2:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+a.articles-item2 {
+    display: block;
+/*    width: 414px;*/
+    width: 32.34%;
+    height: 418px;
+    color: #515151;
+    float: left;
+    box-sizing: border-box;
+/*    margin: 19px 19px 0 0;*/
+    margin: 19px 1.49% 0 0;
+/*    padding: 28px;*/
+    padding: 2.2%;
     background: #fff;
+    font: 88% "Panton";
+    transition: box-shadow .1s linear;
+}
+a.articles-item2:hover {
+    box-shadow: 0 0 20px 1px #888;
+}
+a.articles-item2:nth-of-type(3n) {
+    margin-right: 0;
+}
+a.articles-item2 span {
+    display: block;
+}
+.articles-item2 .img-wrap {
+    border: 1px solid #9C9C9C;
+    height: 218px;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+.articles-item2 .article-caption {
+    font-size: 164%;
+    height: 35px;
+    overflow: hidden;
+}
+.articles-item2 .article-dscr {
+    height: 52px;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+.articles-item2 .bottom:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.articles-item2 .category {
+    float: left;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #FFCA2A;
+}
+.articles-item2 .view,
+.articles-item2 .like {
+    float: right;
+    padding-left: 20px;
+    background: transparent url(../img/article-sprite.png) 0 3px no-repeat;
+}
+.articles-item2 .like {
+    margin-left: 20px;
+    background-position: 0 -15px;
+}
+/*--registration--*/
+.registry-wrap {
+/*    width: 718px;*/
+    width: 56%;
+    box-sizing: border-box;
+    margin: 30px auto 70px;
+/*    padding: 35px 30px;*/
+    padding: 35px 2.3%;
+    background: #fff;
+    color: #a3a3a3;
+    font: 113% "Panton";
+}
+.registry-wrap h3 {
+    padding: 15px 0 30px;
+    color: #a3a3a3;
+/*    font: 36px "Panton";*/
+    font: 200% "Panton";
+}
+.registry-wrap input.orange {
+    width: 62.67%;
+/*    padding: 0 20px 0 75px;*/
+    padding: 0 20px 0 11.4%;
+    font-size: 100%;
+    background: transparent url(../img/registry-wrap.png) 7% 0 no-repeat;
+}
+.registry-wrap input.name {
+    background-position: 7% 21px;
+}
+.registry-wrap input.mail {
+    background-position: 7% -49px;
+}
+.registry-wrap input.phone {
+    background-position: 7% -119px;
+}
+.registry-wrap input.login {
+    background-position: 7% -189px;
+}
+.registry-wrap input.pass {
+    background-position: 7% -259px;
+}
+.registry-wrap button {
+    width: 317px;
+    height: 63px;
+/*    font: 24px "Panton";*/
+    font: 133% "Panton";
+    color: #fff;
+    text-transform: uppercase;
+    background: #FFCA2A;
+    border: 0;
+    display: block;
+    margin: 20px auto;
+}
+.registry-wrap button:hover {
+    background: #FFCA2A;
+}
+.registry-wrap button:active {
+
+}
+.registry-wrap p {
+    padding: 5px 0;
+}
+.registry-wrap .caption {
+    color: #f3c344;
+/*    font: 36px "PantonBold";*/
+    padding: 10px 0 15px;
+    font: 200% "PantonBold";
+}
+.authorization-box .registry-wrap a {
+    float: right;
+/*    margin-right: 122px;*/
+    margin-right: 18.8%;
+    color: inherit;
+    text-decoration: underline !important;
+}
+.authorization-box .registry-wrap button {
+    margin-bottom: 40px;
+}
+.authorization-box .registry-wrap input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 0 18.8%;
+    vertical-align: middle;
+    background: #fff;
+}
+.authorization-box .registry-wrap input[type=checkbox]:checked {
+    background: url(../img/gal.png) center no-repeat !important;
+}
+.authorization-box .registry-wrap label {
+
 }
