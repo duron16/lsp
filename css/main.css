@@ -1777,16 +1777,97 @@ a.articles-item2 span {
 }
 .reviews-wrap {
     background: #F2F2F2;
+    padding: 20px 0;
 }
 .reviews {
-    height: 1085px;
+    max-height: 1085px;
     margin: 0 100px;
-/*    overflow-y: auto;*/
-    overflow-y: scroll;
+    overflow-y: auto;
 }
-.reviews-item img {
+.reviews-item {
+    min-height: 115px;
+    position: relative;
+    margin: 0 33px 70px;
+    color: #737373;
+    font: 88% "Arial";
+    position: relative;
+}
+.reviews-item:nth-child(2n) .img-wrap {
+    position: absolute;
+    bottom: 0; right: 0;
+    text-align: center;
+}
+.reviews-item:nth-child(2n) .review {
+    margin: 20px 138px 10px 35px;
+}
+.reviews-item:nth-child(2n) .review:before {
+    content: '';
+    background: none;
+}
+.reviews-item:nth-child(2n) .review:after {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 25px;
+    position: absolute;
+    right: -16px;
+    bottom: 5px;
+    background: url(../img/reviews.png) -18px 0 no-repeat;
+}
+.reviews-item:nth-child(2n) .date-time {
+    float: left;
+    margin: 0px 138px 15px 35px;
+}
+.reviews-item:nth-child(2n) . {}
+
+.reviews-item .review:before {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 25px;
+    position: absolute;
+    left: -18px;
+    bottom: 5px;
+    background: url(../img/reviews.png) 0 0 no-repeat;
+}
+.reviews-item .review {
+    background: #fff;
+    margin: 20px 35px 10px 138px;
+    padding: 25px 30px 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    position: relative;
+}
+.reviews-item .img-wrap {
     width: 111px;
     height: 111px;
+    overflow: hidden;
     border: 1px solid #dcdcdc;
     border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+.reviews-item .img-wrap img {
+    min-width: 100%;
+    min-height: 100%;
+}
+.reviews-item .review .caption {
+    font: 129% "PantonBold";
+    padding-bottom: 10px;
+}
+.reviews-item .date-time {
+    float: right;
+    margin: 0px 35px 15px 138px;
+}
+.reviews-item .date-time:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.reviews-item .date-time div {
+    float: right;
+}
+.reviews-item .date-time .time {
+    margin-left: 33px;
 }
