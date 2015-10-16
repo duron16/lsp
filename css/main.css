@@ -1871,3 +1871,46 @@ a.articles-item2 span {
 .reviews-item .date-time .time {
     margin-left: 33px;
 }
+.leave-comment {
+/*    padding: 40px 108px 70px;*/
+    padding: 40px 8.4% 55px;
+}
+.leave-comment:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.leave-comment .img-wrap {
+    width: 111px;
+    height: 111px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+}
+.leave-comment form {
+    float: right;
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: -185px;
+    padding-left: 185px;
+}
+.leave-comment form textarea {
+    width: 95%;
+    padding: 15px 2.5%;
+    height: 290px;
+    background: #fff;
+    border: ;
+    font: 113% "Panton";
+    color: #737373;
+    border-radius: 11px;
+}
+.leave-comment form button {
+    float: right;
+    background: #FFCA2A;
+    border: none;
+    color: #fff;
+    font: 150% "Panton";
+/*    padding: 15px  60px;*/
+    padding: 15px 6.8%;
+    margin: 15px 0;
+}
