@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="css/responsiveslides.css">
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/responsiveslides.min.js"></script>
-    <script src="js/common.js"></script>
     <script src="js/jquery.bgdsize.js"></script>
 
     <!--[if (lt IE 11)]>
@@ -44,8 +43,8 @@
                     <li><a href="#" class="icon-user">Вход</a></li>
                     <li><a href="#" class="icon-key">Регистрация</a></li>
                 </ul>
-                <div class="menu-box icon-menu" onclick="showMenu()">
-                    <div class="menu" id="showMenu">
+                <div class="menu-box icon-menu drop-down">
+                    <div class="menu drop-menu-main-sub">
                         <ul>
                             <li><a href="#">Обратная связь</a></li>
                             <li><a href="#">Подписаться на новости</a></li>
@@ -133,17 +132,38 @@ $(document).ready(function() {
     $('.TextContainer').textfill({ maxFontPixels: 50 });
 });
     </script>
-        <script>
-var visible = true;
-function showMenu() {
-    if(visible) {
-        document.getElementById('showMenu').style.display = 'block';
-        visible = false;
-    } else {
-        document.getElementById('showMenu').style.display = 'none';
-        visible = true;
-    }
-}
+    <script>
+        $(function() {
+            $(".rslides").responsiveSlides({
+                nav: false,
+                timeout: 7000,
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            function hideallDropdowns() {
+                $(".dropped .drop-menu-main-sub").hide();
+                $(".dropped").removeClass('dropped');
+                $(".dropped .drop-menu-main-sub .title").unbind("click");
+            }
+            function showDropdown(el) {
+                var el_li = $(el).parent().addClass('dropped');
+                el_li
+                    .find('.title')
+                    .click(function () {
+                    hideallDropdowns();
+                })
+                    .html($(el).html());
+                el_li.find('.drop-menu-main-sub').show();
+            }
+            $(".drop-down").click(function(){
+                showDropdown(this);
+            });
+            $(document).mouseup(function () {
+                hideallDropdowns();
+            });
+        });
     </script>
 
 </body>
