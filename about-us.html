@@ -49,8 +49,8 @@
                             <li><a href="#">Подписаться на новости</a></li>
                             <li><a href="#">Спросить эксперта</a></li>
                             <li><a href="#">В будущем</a></li>
+                            <li class="close"><span>&gt;</span></li>
                         </ul>
-                    <div class="close" id="hideMenu"><span>&gt;</span></div>
                     </div>
                 </div>
             </div>
@@ -182,7 +182,7 @@ $(document).ready(function() {
     <script type="text/javascript">
         $(document).ready(function () {
             function hideallDropdowns() {
-                $(".dropped .drop-menu-main-sub").hide();
+                $(".dropped .drop-menu-main-sub").hide(150);
                 $(".dropped").removeClass('dropped');
                 $(".dropped .drop-menu-main-sub .title").unbind("click");
             }
@@ -194,13 +194,20 @@ $(document).ready(function() {
                     hideallDropdowns();
                 })
                     .html($(el).html());
-                el_li.find('.drop-menu-main-sub').show();
+                el_li.find('.drop-menu-main-sub').show(150);
             }
             $(".drop-down").click(function(){
                 showDropdown(this);
             });
             $(document).mouseup(function () {
                 hideallDropdowns();
+            });
+            $('.close').click(function () {
+                hideallDropdowns();
+                console.log('OPA');
+            });
+            $(document).click(function(e){
+                console.log(e.target);
             });
         });
     </script>
