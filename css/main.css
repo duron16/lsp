@@ -1081,7 +1081,11 @@ ul.footer-nav li a:hover {
 /*    padding: 44px 69px;*/
     padding: 44px 5.39%;
 }
-.subscribe-box form input {
+.subscribe-box form input[type=email],
+.subscribe-box form input[type=text],
+.subscribe-box form input[type=search],
+.subscribe-box form input[type=password],
+.subscribe-box form input[type=tel] {
 /*    width: 278px;*/
     width: 29.67%;
     box-sizing: border-box;
@@ -1098,7 +1102,11 @@ ul.footer-nav li a:hover {
     -ms-transition: width .1s linear, box-shadow .1s linear, padding .1s linear;
     -o-transition: width .1s linear, box-shadow .1s linear, padding .1s linear;
 }
-.subscribe-box form input:focus {
+.subscribe-box form input[type=email]:focus,
+.subscribe-box form input[type=text]:focus,
+.subscribe-box form input[type=search]:focus,
+.subscribe-box form input[type=password]:focus,
+.subscribe-box form input[type=tel]:focus {
     width: 35%;
     border: 1px solid #F3C344;
     padding: 21px 3% 21px 8.5%;
@@ -1118,7 +1126,8 @@ ul.footer-nav li a:hover {
     float: right;
     background: url(../img/subscribe-name.png) 10% center no-repeat;
 }
-.subscribe-box form button {
+.subscribe-box form .btn-effects {
+    width: auto;
     display: block;
     background: #F3C344;
     margin: 30px auto 10px;
@@ -1245,7 +1254,11 @@ form.num-2 h4 {
     font: 225% "Panton";
     margin: 0 0 35px;
 }
-form.num-2 input,
+form.num-2 input[type=email],
+form.num-2 input[type=text],
+form.num-2 input[type=search],
+form.num-2 input[type=password],
+form.num-2 input[type=tel],
 form.num-2 textarea {
     width: 100%;
     background: #F8F8F8;
@@ -1262,7 +1275,12 @@ form.num-2 textarea {
     -ms-transition: background .1s linear, box-shadow .1s linear;
     -o-transition: background .1s linear, box-shadow .1s linear;
 }
-form.num-2 input:focus,
+/*form.num-2 input:focus,*/
+form.num-2 input[type=email]:focus,
+form.num-2 input[type=text]:focus,
+form.num-2 input[type=search]:focus,
+form.num-2 input[type=password]:focus,
+form.num-2 input[type=tel]:focus,
 form.num-2 textarea:focus {
     background: #fff;
     position: relative;
@@ -1286,11 +1304,13 @@ form.num-2 textarea {
     height: 224px;
     padding-left: 8.6%;
 }
+.btn-effects,
 form.num-2 button {
     width: 100%;
     margin: 40px 0 0;
     padding: 0;
     border: 0;
+    display: inline-block;
     background: #F1C93F;
     height: 63px;
     text-align: center;
@@ -1466,10 +1486,13 @@ form.num-2 button {
 }
 .btn-and-search .female,
 .btn-and-search .male {
-    border: 2px solid #F1C93F;
-    border-radius: 4px;
+    display: inline-block;
     width: 228px;
     height: 61px;
+    border: 2px solid #F1C93F;
+    border-radius: 4px;
+    line-height: 61px !important;
+    box-sizing: border-box;
     padding-left: 60px;
     color: #f1c93f;
     font: 150% "Panton";
@@ -1509,6 +1532,14 @@ form.num-2 button {
 /*    padding: 0 44px 0 3%; */ /*Без кнопки закрытия*/
     padding: 0 75px 0 3%;
     float: left;
+    transition: box-shadow .1s linear;
+    -webkit-transition: box-shadow .1s linear;
+    -moz-transition: box-shadow .1s linear;
+    -ms-transition: box-shadow .1s linear;
+    -o-transition: box-shadow .1s linear;
+}
+.btn-and-search form.search input:focus {
+    box-shadow: 0 0 5px 4px #F1C93F;
 }
 .btn-and-search form.search button {
     width: 65px;
@@ -1632,7 +1663,7 @@ a.articles-item2 span {
 .registry-wrap input.pass {
     background-position: 7% -259px;
 }
-.registry-wrap button {
+.registry-wrap .btn-effects {
     width: 317px;
     height: 63px;
 /*    font: 24px "Panton";*/
@@ -1644,10 +1675,10 @@ a.articles-item2 span {
     display: block;
     margin: 20px auto;
 }
-.registry-wrap button:hover {
+.registry-wrap .btn-effects:hover {
     background: #FFCA2A;
 }
-.registry-wrap button:active {
+.registry-wrap .btn-effects:active {
 
 }
 .registry-wrap p {
@@ -1777,6 +1808,7 @@ a.articles-item2 span {
 .reviews-wrap {
     background: #F2F2F2;
     padding: 20px 0;
+    box-shadow: 0 0 5px 2px #999;
 }
 .reviews {
     max-height: 1085px;
@@ -1902,8 +1934,17 @@ a.articles-item2 span {
     font: 113% "Panton";
     color: #737373;
     border-radius: 11px;
+    transition: box-shadow .1s linear;
+    -webkit-transition: box-shadow .1s linear;
+    -moz-transition: box-shadow .1s linear;
+    -ms-transition: box-shadow .1s linear;
+    -o-transition: box-shadow .1s linear;
 }
-.leave-comment form button {
+.leave-comment form textarea:focus {
+    box-shadow: 0 0 15px 2px #BABABA;
+}
+.leave-comment form .btn-effects {
+    width: auto;
     float: right;
     background: #FFCA2A;
     border: none;
